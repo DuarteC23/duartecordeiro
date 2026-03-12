@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duarte Cordeiro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="media/logo.png" alt="Duarte Cordeiro" class="logo-img" onerror="this.style.display='none'; document.querySelector('.logo-text').style.display='block'"/>
+        <span class="logo-text" style="display:none">DUARTE CORDEIRO</span>
+      </div>
+      <nav class="nav-links">
+        <a href="mailto:duartecordeiro@email.com">Contacto</a>
+        <a href="https://instagram.com" target="_blank" class="ig-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Photo <span>&amp;</span> Video</h1>
+    </div>
+  </section>
+
+  <!-- FEED GRID -->
+  <main class="feed" id="feed">
+    <!-- Items loaded from media-config.js -->
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav prev" id="lightboxPrev">&#8592;</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <button class="lightbox-nav next" id="lightboxNext">&#8594;</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Duarte Cordeiro — Todos os direitos reservados</p>
+  </footer>
+
+  <script src="js/media-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
